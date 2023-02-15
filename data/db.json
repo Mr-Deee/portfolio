@@ -2,7 +2,6 @@
     "blogs":[
     {
          "title": "Flutter  ",
-         "Image": "",
           "body": "High Fidelity apps", 
           "author": "D|N", 
           "id": 1 
@@ -10,7 +9,6 @@
     
         {
         "title": "React",
-        "Image": "", 
         "body": "Still On IT", 
         "author": "D|N", 
         "id": 2
