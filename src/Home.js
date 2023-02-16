@@ -1,5 +1,5 @@
 
-
+import './index.css';
 import BlogList from "./BlogList";
 import useFetch from "./usefetch";
 
@@ -8,11 +8,11 @@ const Home = () => {
   
 
   return (
-    <div className="container-div">
+    <div className="home">
       {error&& <div>{error}</div>}
       {isPending && <div>Loading....</div>}
-      {blogs && <BlogList blogs={blogs} title="ALL Blogs!" />}
-    </div>
+      <div className=" blogList"> {blogs && <BlogList blogs={blogs} title="Vitae!" />}
+    </div></div>
   );
 
 }
