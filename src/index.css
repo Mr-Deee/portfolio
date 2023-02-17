@@ -3,8 +3,11 @@
 /* base styles */
 * {
   background-color: rgb(39, 37, 37);
-  margin: 0;
+  margin: 7;
   font-family: "Quicksand";
+  padding: auto;
+  font-size: large;
+
   color: #f6ecec;
 }
 .navbar {
@@ -16,7 +19,8 @@
   border-bottom: 1px solid #f2f2f2;
 }
 .navbar h1 {
-  color: #ffffff;
+  color: #f8efef;
+  text-shadow: #e02a2a;
 }
 .navbar .links {
   margin-left: auto;
@@ -39,12 +43,13 @@
   color: aqua;
   font-size: large;
 }
-/* .container-div {
+.containerdiv {
  color: rgb(241, 250, 250);
   display: "flex";
   justify-content: "center";
   height: "100vh";
+
   
   background-image: "linear-gradient(to right, #427ceb, #1dad6f)";
-} */
+}
 

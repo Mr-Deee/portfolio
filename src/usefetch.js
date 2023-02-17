@@ -5,6 +5,7 @@ const useFetch =(url)=>{
     const [data, setData] = useState(null);
   const [isPending, setIsPending] = useState(true);
   const [error,setError]=useState(null);
+
   useEffect(() => {
     setTimeout(() => {
       fetch(url)
@@ -23,6 +24,8 @@ const useFetch =(url)=>{
           setError(err.message);
         })
       },1000);
+
+      return() => console.log('cleanup');
 
   },[url])
 
