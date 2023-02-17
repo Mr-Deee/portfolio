@@ -3,11 +3,36 @@ const Create = ()=>{
         <div className="create">
             <h2>Add a New  Blog</h2>
 
+            <form>
+            <label>Blog title:</label>
+            <input 
+            type= "text"
+            required/>
+
+
+<label>Blog body:</label>
+            <textarea 
+             required><textarea/>
+
+
+<label>Blog author:</label>
+            <select>
+                <option value = 'D'>D</option>
+                <option value = 'N'>N</option>
+           
+           </select>
+           <button></button>
+
+
+
+
+            </form>
+
 
 
         </div>
 
-    )
+);
 }
 
 export default Create;
