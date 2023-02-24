@@ -6,7 +6,17 @@ const user = {
   imageSize: 90,
 };
 
- function mybutton(){
+ function Mybutton(){
+  return (
+
+    <button>
+      Random ass button
+    </button>
+  )
+   
+
+
+ 
 
 
 }
@@ -20,6 +30,8 @@ const Home = () => {
     <><div className="WelcomeTxt">
       
       <h2>Sit-back relax and enjoy the Ride</h2>
+     
+     
       
       </div>
       
@@ -41,8 +53,9 @@ const Home = () => {
         {error && <div>{error}</div>}
         {isPending && <div>Loading....</div>}
         {blogs && <BlogList blogs={blogs} />}
+
+        
       </div>
-      
       </>
   );
 
