@@ -96,3 +96,12 @@ border-radius: 50%;
   height: "100vh";
 
 }
+.body2 {
+
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding-top: 20%;
+  color: rgb(243, 246, 246);
+  display: "flex";
+  justify-content: "left";
+  height: "100vh"; 
+}
