@@ -1,25 +1,17 @@
 import BlogList from "./BlogList";
 import useFetch from "./usefetch";
-const user = {
-  name: 'D|N',
-  imageUrl: 'https://i.imgur.com/yXOvdOSs.jpg',
-  imageSize: 90,
-};
+import { bounce } from 'react-animations';
+import styled from "styled-components";
 
- function Mybutton(){
-  return (
-
-    <button>
-      Random ass button
-    </button>
-  )
-   
+import { keyframes } from "@emotion/react";
 
 
- 
+// const user = {
+//   name: 'D|N',
+//   imageUrl: 'https://i.imgur.com/yXOvdOSs.jpg',
+//   imageSize: 90,
 
-
-}
+const Bounce = styled.div`animation:  2s ${keyframes`${bounce}`} infinite;`;
 
 const Home = () => {
   const {data: blogs,isPending,error} = useFetch("http://localhost:3000/blogs");
@@ -27,14 +19,14 @@ const Home = () => {
 
   return (
 
-    <><div className="WelcomeTxt">
+    <><bounce><div className="WelcomeTxt">
       
       <h2>Sit-back relax and enjoy the Ride</h2>
      
      
       
       </div>
-      
+      </bounce>
       
       {/* <><h1>{user.name}</h1><img
       className="avatar"

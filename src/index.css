@@ -96,6 +96,8 @@ border-radius: 50%;
   height: "100vh";
 
 }
+
+
 .body2 {
 
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -104,4 +106,15 @@ border-radius: 50%;
   display: "flex";
   justify-content: "left";
   height: "100vh"; 
+}
+.column {
+  float: left;
+  width: 45.33%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
