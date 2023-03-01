@@ -3,13 +3,23 @@
 /* base styles */
 * {
   margin: 0;
-  background-color: rgb(39, 37, 37);
+  /* background-color: rgb(39, 37, 37); */
   margin: 7;
   font-family: "Quicksand";
   padding: auto;
   font-size: large;
 
   color: #f6ecec;
+}
+
+
+
+body {
+  margin: 0;
+  font-family: "Raleway", serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: linear-gradient(to left, rgb(27 20 41), rgb(20 15 35));
 }
 .navbar {
   padding: 20px;

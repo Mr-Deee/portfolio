@@ -1,56 +1,55 @@
-import BlogList from "./BlogList";
-import useFetch from "./usefetch";
-import { bounce } from 'react-animations';
-import styled from "styled-components";
+// import BlogList from "./BlogList";
+// import useFetch from "./usefetch";
+import Particle from "./Particle";
+// import { bounce } from "react-animations";
+// import styled from "styled-components";
+import { Container, Row, Col } from "react-bootstrap";
+// import { keyframes } from "@emotion/react";
+import Type from "./Type";
+// import { blue } from "@mui/material/colors";
 
-import { keyframes } from "@emotion/react";
 
 
-// const user = {
-//   name: 'D|N',
-//   imageUrl: 'https://i.imgur.com/yXOvdOSs.jpg',
-//   imageSize: 90,
 
-const Bounce = styled.div`animation:  2s ${keyframes`${bounce}`} infinite;`;
 
-const Home = () => {
-  const {data: blogs,isPending,error} = useFetch("http://localhost:3000/blogs");
+// const Bounce = styled.div`animation:  2s ${keyframes`${bounce}`} infinite;`;
+
+
+function Home() {
+//  const {data: blogs,isPending,error} = useFetch("http://localhost:3000/blogs");
   
 
   return (
 
-    <><bounce><div className="WelcomeTxt">
-      
-      <h2>Sit-back relax and enjoy the Ride</h2>
-     
-     
-      
-      </div>
-      </bounce>
-      
-      {/* <><h1>{user.name}</h1><img
-      className="avatar"
-      src={user.imageUrl}
-      alt={'Photo of ' + user.name}
-      style={{
-        width: user.imageSize,
-        height: user.imageSize
-      }} /></>
-      <div>
-        {error && <div>{error}</div>}
-        {isPending && <div>Loading....</div>}
-        {blogs && <BlogList blogs={blogs} />}
-      </div> */}
-      <div>
-        {error && <div>{error}</div>}
-        {isPending && <div>Loading....</div>}
-        {blogs && <BlogList blogs={blogs} />}
+    <section>
+      <Container fluid className="home-section" id="home">
+        <Particle />
+        <Container className="home-content">
+          <Row>
+            <Col md={7} className="home-header">
+              <h1 style={{ paddingBottom: 15 }} className="heading">
+                Hi There!{" "}
+                <span className="wave" role="img" aria-labelledby="wave">
+                  👋🏻
+                </span>
+              </h1>
 
-        
-      </div>
-      </>
-  );
+              <h1 className="heading-name">
+                I'M
+                <strong className="main-name"> Daniel Narterh</strong>
+              </h1>
 
+              <div style={{ padding: 50, textAlign: "left" }}>
+                <Type />
+              </div>
+            </Col>
+          </Row>
+        </Container>
+      </Container>
+    </section>
+
+
+);
 }
 
 
