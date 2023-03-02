@@ -2,21 +2,19 @@ import React, { useState, useEffect } from "react";
 import Navbar from "./Navbar";
 import Preloader from "./Pre";
 import Home from "./Home";
-// import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Footer from "./Footer";
 import "./App.css";
-// import ScrollToTop from ".ScrollToTop";
 import {
   BrowserRouter as Router,
   Route,
   Routes,
   Navigate
 } from "react-router-dom";
-// import Create from "./Create";
 import ScrollToTop from "./ScrollToTop";
 import Projects from "./Project";
 import "./style.css";
 import "./App.css";
-// import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
 const [load, upadateLoad] = useState(true);
@@ -30,11 +28,12 @@ const [load, upadateLoad] = useState(true);
   }, []);
 
   return (
-
+ 
     <Router>
+    
     <Preloader load={load} />
     <div className="App" id={load ? "no-scroll" : "scroll"}>
-      <Navbar />
+     <Navbar/>
     <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -43,10 +42,10 @@ const [load, upadateLoad] = useState(true);
         <Route path="/" element={<Home />} />
         <Route path="*" element={<Navigate to="/"/>} />
       </Routes>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   </Router>
-);
+)
 
 
 

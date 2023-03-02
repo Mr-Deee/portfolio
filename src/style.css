@@ -86,11 +86,9 @@ button:focus {
 
 
 .navbar {
-  
-  
-  position: fixed !important;
+  position: relative !important;
   transition: all 0.3s ease-out 0s !important;
-  padding: 1.3rem rem !important;
+  padding: 1.rem rem !important;
   font-size: 1.2rem !important;
 }
 
@@ -102,7 +100,7 @@ button:focus {
 
 .navbar-toggler span {
   display: block !important;
-  background-color: #be50f4 !important;
+  background-color: #d8cade !important;
   height: 4px !important;
   width: 27px !important;
   margin-top: 5px !important;
@@ -138,7 +136,7 @@ button:focus {
 }
 
 .navbar-toggler:not(.collapsed) span:nth-child(3) {
-  position: absolute !important;
+  position: relative !important;
   left: 12px !important;
   top: 10px !important;
   transform: rotate(-135deg) !important;
@@ -182,7 +180,7 @@ button:focus {
 
 .navbar-nav .nav-item {
   position: relative;
-  margin-left: 20px;
+  margin-left: 30px;
 }
 
 .navbar-nav .nav-item a {
@@ -199,7 +197,7 @@ button:focus {
   height: 5px;
   width: 0;
   border-radius: 16px;
-  background: #c95bf5;
+  background: #cbcbcb;
   bottom: 1px;
   left: 0;
   z-index: -1;
@@ -207,7 +205,7 @@ button:focus {
 }
 
 .navbar-nav .nav-item a:hover::after {
-  width: 100%;
+  width: 30%;
 }
 
 /* --------- */
