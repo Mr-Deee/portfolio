@@ -1,18 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
-
-/* base styles */
-* {
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
+body {
   margin: 0;
-  /* background-color: rgb(39, 37, 37); */
-  margin: 7;
-  font-family: "Quicksand";
-  padding: auto;
-  font-size: large;
-
-  color: #f6ecec;
+  font-family: "Raleway", serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: linear-gradient(to left, rgb(27 20 41), rgb(20 15 35));
 }
 
 
+
+/*
 
 body {
   margin: 0;
@@ -65,12 +62,6 @@ body {
 }
 
 
-.blog-preview {
-  padding: 10px 16px;
-  margin: 20px 0;
- /* border-bottom: 1px solid #fafafa;  */
-}
-
 
 .blog-preview:hover  {
   box-shadow : 1px 3px 5px  rgba(0,0,0,0.1);
@@ -78,7 +69,7 @@ body {
 
 }
 
-/* .heading h2 {
+ .heading h2 {
   font-size: 2.4em !important;
   padding-left: 50px !important;
   color: #efebf1;
@@ -91,7 +82,7 @@ body {
 
   
 
-} */
+} 
 .blog-preview a{
 
   
@@ -127,9 +118,10 @@ border-radius: 50%;
   width: 45.33%;
 }
 
-/* Clear floats after the columns */
 .row:after {
   content: "";
   display: table;
   clear: both;
-}
+}*/
+
+
