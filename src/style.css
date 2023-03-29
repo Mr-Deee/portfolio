@@ -143,7 +143,7 @@ button:focus {
 
 @media (max-width: 600px) {
   .menu-icon {
-    display: block;
+    display: flex;
     cursor: pointer;
     color: #f8b12c;
   
@@ -154,7 +154,7 @@ button:focus {
     position: absolute;
     right: 0;
     top: 60px;
-    background-color: #120c02;
+    background-color: #211604;
     width: 0px;
     height: calc(100vh - 60px);
     transition: all 0.3s ease-in;
@@ -231,7 +231,7 @@ font-size: 12px;
   height: 5px;
   width: 0;
   border-radius: 16px;
-  background: #020101;
+  background: #cd3f3f;
   bottom: 1px;
   left: 0;
   z-index: -1;
@@ -443,7 +443,7 @@ font-size: 12px;
   background-color: rgb(10, 4, 22);
   bottom: 0 !important;
   padding-top: 10px !important;
-  padding-bottom: 8px !important ;
+  padding-bottom: 50px !important ;
 }
 .footer-copywright {
   text-align: center !important;
@@ -461,6 +461,9 @@ font-size: 12px;
 
   .footer-body {
     text-align: center !important;
+    padding-top: 10px !important;
+    padding-bottom: 50px !important ;
+
   }
 }
 
