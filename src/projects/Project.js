@@ -35,7 +35,8 @@ function Projects() {
               // imgPath={bitsOfCode}
               isBlog={false}
               title="Capital-Susu"
-              description="Capital Susu is a small scale savings and loans company. I built this app using Dart and Flutter. to keep track new users upadte user account which include deposits."
+              description="Capital Susu is a small scale savings and loans company. 
+              I built this app using Dart and Flutter. to keep track new users update user account which include deposits."
               ghLink="https://github.com/Mr-Deee/capitalsusu"
               //demoLink="https://blogs.soumya-jit.tech/"
             />
@@ -46,7 +47,7 @@ function Projects() {
               // imgPath={editor}
               isBlog={false}
               title="DL"
-              description="This is a Youtube downloader created with dart to allow clients, download desired youtube content all froma click of a button "
+              description="This is a Youtube downloader created with dart to allow clients, download desired youtube content all from a click of a button "
               ghLink="https://github.com/Mr-Deee/dl"
               //demoLink="https://editor.soumya-jit.tech/"              
             />
@@ -68,7 +69,7 @@ function Projects() {
               // imgPath={suicide}
               isBlog={false}
               title="Rev"
-              description="Thos app was developed purposefully for courier purposes."
+              description="This app was developed purposefully for courier services."
               ghLink="https://github.com/Mr-Deee/rev_rider_app"
               // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
             />
