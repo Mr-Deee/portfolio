@@ -75,16 +75,8 @@ function Projects() {
             />
           </Col>
 
-          <Col md={4} className="project-card">
-            <ProjectCard
-              // imgPath={emotion}
-              isBlog={false}
-              title="Facial Recognition"
-              description=""
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
-            />
-          </Col>
+          
+        
         </Row>
       </Container>
     </Container>
