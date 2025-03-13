@@ -440,6 +440,7 @@ font-size: 12px;
 /* Footer */
 /* --------- */
 .footer {
+  position: fixed;
   background-color: rgb(10, 4, 22);
   bottom: 0 !important;
   padding-top: 10px !important;
@@ -486,12 +487,21 @@ font-size: 12px;
 /* Projects */
 /* --------- */
 .project-section {
-  background-color: rgb(254, 254, 254);
+  background-color: rgb(198, 176, 176);
   /* background-color: #e7951a; */
-  position: relative !important;
-  padding-top: 150px !important;
-  padding-bottom: 30px !important;
+  /* position: relative !important; */
+  color: #000;
+  padding-top: 20px !important;
+  padding-bottom: 90px !important;
   background-image: var(--section-background-color) !important;
+}
+
+.project-section h1 {
+
+  /* background-color: #e7951a; */
+  /* position: relative !important; */
+  color: #000;
+
 }
 
 .project-card {
@@ -506,6 +516,7 @@ font-size: 12px;
   box-shadow: 0 4px 5px 3px rgba(55, 0, 69, 0.459) !important;
   color: rgb(26, 23, 23) !important;
   background-color: transparent !important;
+  border-radius: 44%;
   opacity: 0.9 !important;
   transition: all 0.5s ease 0s !important;
   height: 100% !important;
@@ -575,7 +586,7 @@ font-size: 12px;
   box-shadow: none !important;
 }
 .project-heading {
-  color: white !important;
+  color: black !important;
   font-size: 2.3em !important;
   font-weight: 500 !important;
   padding-top: 10px !important;
