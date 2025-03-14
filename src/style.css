@@ -505,26 +505,40 @@ font-size: 12px;
 }
 
 .project-card {
-  padding-top: 50px !important;
-  padding-bottom: 50px !important;
-  padding-left: 25px !important;
-  padding-right: 25px !important;
-  height: auto !important;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  margin-bottom: 30px; /* Adjust spacing between rows */
+
+}
+.project-card-view {
+  width: 100%; /* Make all cards equal width */
+  height: 100%; /* Ensure all cards take up the full container height */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ensures buttons are at the bottom */
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  color: white;
+  border-radius: 20px;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.project-card-view {
-  box-shadow: 0 4px 5px 3px rgba(55, 0, 69, 0.459) !important;
-  color: rgb(26, 23, 23) !important;
-  background-color: transparent !important;
-  border-radius: 44%;
-  opacity: 0.9 !important;
-  transition: all 0.5s ease 0s !important;
-  height: 100% !important;
-}
+
 .project-card-view:hover {
-  transform: scale(1.02) !important;
-  overflow: hidden !important;
-  box-shadow: 0 4px 4px 5px rgba(9, 9, 9, 0.561) !important;
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+button {
+  border-radius: 8px !important;
 }
 
 .blog-card {

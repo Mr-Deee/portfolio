@@ -14,19 +14,36 @@ function Projects() {
         <h1 className="project-heading">
           My Recent <strong className="purple">Works </strong>
         </h1>
-        <p style={{ color: "black" }}>
+        <p style={{ color: "white" }}>
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+
+
+        <Col md={4} className="project-card">
+            <ProjectCard
+              // imgPath={bitsOfCode}
+              isBlog={false}
+              title="Borla GH"
+              description="Borla is a waste management app that connects 
+              waste management services to client from the comfort of their home.
+              I built this app using Dart and Flutter. to creat seamless waste management pick up."
+              ghLink="https://github.com/Mr-Deee/borla_app.git"
+              //demoLink="https://blogs.soumya-jit.tech/"
+            />
+          </Col>
           <Col md={4} className="project-card">
             <ProjectCard
-              // imgPath={chatify}
+              // imgPath={bitsOfCode}
               isBlog={false}
-              title="Total House Clinic"
-              description="This App was Designed with the patients/customers in mind. Customers have the 
-              ability to check various departments for info , make enquiries , book appointments.This App is made from WITH Flutter & Dart"
-              ghLink="https://github.com/Mr-Deee/totalclinic"
-             // demoLink="https://chatify-49.web.app/"
+              title="Fill'd "
+              description="Fill'd is a gas delivery service that connects 
+              clients with trusted gas refill providers. The platform ensures a seamless and convenient experience, 
+              allowing users to request gas refills from nearby suppliers and have them delivered directly to their location."
+              ghLink="https://github.com/Mr-Deee/borla_app.git"
+              playStoreLink="https://play.google.com/store/apps/details?id=com.tos.filldClient&pcampaignid=web_share"
+
+              //demoLink="https://blogs.soumya-jit.tech/"
             />
           </Col>
 
